@@ -1,0 +1,56 @@
+.chess-board{
+      display: grid;
+      grid-template-columns: repeat(8, 80px);
+      grid-template-rows: repeat(8, 80px);
+      justify-content: center;
+}
+.chess-board div{
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 50px;
+}
+
+.chess-board div:hover{
+      background-color: aqua;
+}
+
+.white-cell{
+ 
+    background-color: #f0d9b5;
+}
+.black-cell{
+ 
+    background-color: #b58863;
+}
+
+img{
+    width: -webkit-fill-available;
+}
+
+.undo-btn-container{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.undo-btn-container button{
+    height: 3em;
+    width: 10em;
+    background-color: greenyellow;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+}
+
+.undo-btn-container button:hover{
+    background-color: #6cb500;
+}
+
+@media (max-width: 450px) {
+  body {
+    zoom:50%;
+  }
+}
